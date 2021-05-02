@@ -5,24 +5,117 @@
 }
 
 body {
-  height: 100vh;
-  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  padding: 0;
+  background: #faf8ef;
+  color: #776e65;
+  font-family: clear sans, helvetica neue, Arial, sans-serif;
+  font-size: 18px;
+}
+.container {
+  width: 600px;
+  margin: 5vh auto;
+}
 
+
+.heading h1 {
+  font-size: 74px;
+  line-height: 66px;
+  font-weight: 700;
+  margin: 0;
+  display: block;
+  float: left;
+}
+
+.heading:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.scoreContainer {
+  float: right;
+  display: flex;
+  color: black;
+  text-align: center;
+  width: 40%;
+}
+.scoreTitle,
+.bestScoreTitle {
+  padding: 2%;
+  font-size: 20px;
+  min-width: 103px;
+  margin: 0 5px;
+  border-radius: 5%;
+  border: 1px solid black;
+}
+
+.scoreContainer span {
+  display: block;
+}
+
+.gameContainer {
+  height: 600px;
+  display: flex;
+  background: #bbada0;
+  border-radius: 6px;
 }
 .grid {
-    width: 400px;
-    height: 400px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: blue;
-  }
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: yellow; */
+}
 
-.grid div  {
-  width: 100px;
-  height: 100px;
-  background-color: yellow;
+.grid > div {
+  width: 125px;
+  height: 125px;
   font-size: 60px;
   text-align: center;
   font-weight: bold;
+  box-shadow: -1px 0px 9px 1px #6d6d6d;
+  border: 8px grey solid;
 }
+
+.grid > div > div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:2%;
+  /* box-shadow: -3px 4px 0px; */
+  background-color: antiquewhite;
+}
+
+.square {
+  padding-top: 3%;
+  text-align: center;
+}
+
+img {
+  max-width: 100px;
+  max-height: 100px;
+  padding: 5%;
+  margin: auto;
+  border: 1px black solid;
+}
+
+.result {
+  position: absolute;
+  font-size: 150px;
+  text-align: center;
+  color: black;
+}
+
+.zero {
+  display: none!important;
+}
+
+#result {
+  margin : 5% auto;
+}
+
